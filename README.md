@@ -11,6 +11,13 @@
 ![Scikit-learn](https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
 ## 🚀 Overview
+<img width="1359" height="724" alt="image" src="https://github.com/user-attachments/assets/9901a96f-6b6b-41d0-98a2-98401f4fc70b" />
+<img width="1347" height="683" alt="image" src="https://github.com/user-attachments/assets/3e1f286f-a8be-40d7-9d43-6d37a1fcc5ce" />
+<img width="1365" height="668" alt="image" src="https://github.com/user-attachments/assets/410c5f4f-48c6-4696-8751-970ad2d074d2" />
+<img width="1363" height="674" alt="image" src="https://github.com/user-attachments/assets/313633b0-a7be-4fd2-ad7f-84c617ce0355" />
+
+
+
 
 HireLens AI is an intelligent resume analysis and
 optimization platform that helps job seekers understand
