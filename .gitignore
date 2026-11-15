@@ -10,3 +10,4 @@ __pycache__/
 *.docx
 uploads/
 generated_resumes/
+check_models.py
