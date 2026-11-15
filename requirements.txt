@@ -1,0 +1,7 @@
+streamlit>=1.45.0
+scikit-learn
+pypdf
+google-genai
+python-dotenv
+reportlab
+python-docx

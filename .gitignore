@@ -1,0 +1,12 @@
+.venv/
+venv/
+.env
+.env.*
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.vscode/
+*.pdf
+*.docx
+uploads/
+generated_resumes/
