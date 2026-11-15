@@ -4,6 +4,16 @@
 ### AI-Powered Resume Intelligence Platform
 
 > Analyze smarter. Optimize intelligently. Apply confidently.
+> 
+## 🌐 Live Demo
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hirelens-ai-riya.streamlit.app/)
+
+🚀 **Try HireLens AI:** https://hirelens-ai-riya.streamlit.app/
+
+Analyze your resume, identify skill gaps, and generate
+AI-powered tailored resumes in PDF and DOCX formats.
+
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -252,6 +262,7 @@ VIT Bhopal University
 
 - GitHub: [Riyarathore12](https://github.com/Riyarathore12)
 - LinkedIn: [Riya Rathore](https://www.linkedin.com/in/riya-rathore18)
+- 
 
 ---
 
