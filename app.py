@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
 import os
 import html
 import hashlib
@@ -81,36 +89,46 @@ with st.sidebar:
 
     st.markdown("### AI Configuration")
 
-    api_key = st.text_input(
-        "Gemini API Key",
-        value=os.getenv("GEMINI_API_KEY", ""),
-        type="password",
-        help="Your key is used to connect to Gemini."
-    )
+    try:
+        server_api_key = st.secrets.get("GEMINI_API_KEY", "")
+        server_model = st.secrets.get("GEMINI_MODEL", "")
+    except FileNotFoundError:
+        server_api_key = ""
+        server_model = ""
 
-    model_name = st.text_input(
-        "Gemini Model",
-        value=os.getenv(
-            "GEMINI_MODEL",
-            "gemini-3.5-flash"
-        )
-    )
+    server_api_key = (
+        server_api_key or os.getenv("GEMINI_API_KEY", "")
+    ).strip()
 
-    if api_key:
+    model_name = (
+        server_model or os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
+    ).strip()
 
-        st.success("API key configured")
-
+    if server_api_key:
+        api_key = server_api_key
+        st.success("AI Engine Configured")
     else:
-
-        st.info(
-            "Configure an API key to enable "
-            "AI resume optimization."
+        api_key = st.text_input(
+            "Gemini API Key",
+            type="password",
+            placeholder="Enter your Gemini API key"
         )
 
-    st.markdown(
-        "[Get Gemini API Key]"
-        "(https://aistudio.google.com/apikey)"
-    )
+        if api_key:
+            st.success("API key configured")
+        else:
+            st.info(
+                "Configure an API key to enable "
+                "AI resume optimization."
+            )
+
+        st.markdown(
+            "[Get Gemini API Key]"
+            "(https://aistudio.google.com/apikey)"
+        )
+
+    st.caption(f"AI Model: {model_name}")
+    st.caption("Powered by Google Gemini")
 
     st.divider()
 
@@ -1453,3 +1471,7 @@ st.html("""
 
 </div>
 """)
+
+
+
+
